@@ -1,0 +1,102 @@
+<html>
+<head>
+    <!-- html요소를 접근하는 scc selector 이해 → 웹상에서 데이터 수집 시 필요 기술 -->
+    <!-- 만약 몰라도, 툴에서 자동으로 획득은 가능함(다만, 보정 필요) -->
+    <!-- 편의상 js 프레임워크 jQuery를 사용-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- js는 요소를 찾아서, 이벤츠 처리함(DOM조작, 통신, ...) -->
+    <!-- 요소 : element → <start tag>contens<end tag> ← XML에서 정의된 용어 -->
+
+    <div>
+        <h1>인공지능</h1>
+        <h1 class = "ml">머신러닝</h1>
+        <h1 id = 'dl'>딥러닝</h1>
+
+        <h2>java</h2>
+        <h2 class = "ml">python</h2>
+
+        <ul>
+            <li>python</li>
+            <li>R</li>
+            <li>java
+                <ol>
+                    <li>AA</li>
+                    <li>BB</li>
+                    <li>CC</li>
+                </ol>
+            </li>
+        </ul>
+
+        <input type="text" name="uid">
+        <input type="password" name="upd">
+
+        <table border="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 클라이언트사이드에서 js 사용 시 원칙DOM트리가 만들어지는 타이밍에 맞춰 코드가 배치된다.
+            만약 타이밍을 모르겠으면 body 태그가 닫히기 직전에 위치 -->
+
+    <!-- <script>alert('hi')</script> -->
+
+    <script>
+        // 문서상에 존재하는 모든 h1을 찾아서, 글자색을 빨강색으로 처리하시오
+        // jQuery → $('css selector') → 요소를 찾는 방법 
+        // 1. 요소를 다 찾는 방법 → 그냥 이름을 명시
+            $('h1').css('color', 'red')
+        // 2. id를 찾는 방법 → #아이디값 → 요소를 찾는 1순위 방법
+        // 문서 상에 존재하는 모든 요소 중에 ID가 dl인 요소를 찾아서, 글자색을 파란색으로 처리하시오
+            $('#dl').css('color', 'blue')
+        // 3. class를 찾는 방법 → .클래스명
+            $(".ml").css('color', 'gray')
+        // 4. 열거 → ,를 구분값으로 해서 나열하면 됨
+            $("h2, #dl").css('color', 'purple')
+        // 5. 조합 → .을 구분값으로 함
+            $("h2.ml").css('color', 'teal')
+
+        // 서열 → 특정할 수 있는 대상이 부모한테 있다면 유용
+            $('li').css('background', 'pink')
+            // 직계자식 → 부모 > 자식
+                $('ul>li').css('background', 'yellow')
+            // 자손까지 → 부모 자식(후손)
+                $('ul li').css('background', 'orange')
+
+        // 속성 셀렉터 → [속성명 = 속성값]
+            $("[name = uid]").css('background', 'indigo')
+            $("input[name = uid]").css('background', 'indigo')
+
+        // 이 문서 상에 존재하는 모든 tr들 중에서
+        // 의사결정 → table, tr, td 등에 많이 적용
+            $("tr:odd").css('background', 'cyan')
+            $("tr:even").css('background', 'gray')
+            // 1이 들어있는 tr만 파란색
+                $('tbody>tr:first').css('background', 'blue')           // first 첫째
+                $('tbody>tr:last').css('background', 'orange')          // last 막내
+                $('tbody>tr:nth-child(2)').css('background', 'green')   // 순번은 1번부터 시작
+                $('tr:gt(2)').css('background', 'white')                // 2번 후 모든 tr
+                $('tr:lt(2)').css('background', 'red')                  // 2번 전 모든 tr
+        
+        // body > div > table > tbody > tr:nth-child(1) > td.sale
+    </script>
+</body>
+</html>
