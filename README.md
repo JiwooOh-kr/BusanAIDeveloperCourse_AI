@@ -1,7 +1,11 @@
 # BusanAIDeveloperCourse_AI
 
+- VS Code의 WSL Extension 사용, D드라이브 파일에 Git 폴더 위치 -> /mnt/d/Program Files/Git/..
+- colab은 eek6928@gmail.com 계정에서 사용
+
 - Analysis
-    - VS Code의 WSL Extension 사용, D드라이브 파일에 Git 폴더 위치 -> /mnt/d/Program Files/Git/..
+
+- MachineLearning
 
 - DeepLearning
     - 05_텐서플로를 이용한 CNN 구현
@@ -23,3 +27,52 @@
         - 연산, 브로드캐스팅
         - sum, mean, max, min, argmax, argmin
         - 논리
+    - 09_pyTorch를 이용한 CNN
+        - 성당 이미지 활용
+        - 수평커널, 수직커널 직접 구현
+        - API를 이용해 합성곱층 구현 : torch.nn
+        - 풀링 구현
+    - 10_활성화함수
+        - sigmoid, tanh, Relu, Leaky Relu, PRelu, ELU, Maxout, softmax
+    - 11-1_LSTM_Retail trade sales
+        - Canada의 Retail trade sales 데이터 활용
+        - Window
+    - 11-2_LSTM_주식
+        - 스탠다드앤푸어 500 데이터세트, 아마존 주식
+        - 노이즈 제거 : 지수 평활법(exponential smoothing)
+        - 베이스라인 모델 : 단순 이동 평균(simple moving average), 지수 이동 평균(exponential moving average)
+        - 로그 계산
+    - 11-3_LSTM_환율
+        - adfuller
+        - acf/pacf
+    - 11-4_LSTM_호흡기 질환 사망자 수
+        - LSTM을 이용하여 시계열 예측을 구현하고 RNN, ARIMA 모형과 비교
+    - 11-5_LSTM_부동산
+        - 강남구 아파트 가격 지수
+    - 12-1_자연어 처리_기초
+        - 딥러닝 발전 분야 : 이미지 분류, 기계 번역, 음성 인식, 생성 모델
+        - 자연어 처리 패러다임/난이도/체크포인트
+    - 12-2_자연어 처리_한글 형태소 처리
+        - 코퍼스(말뭉치) 수집
+        - 분절 : 형태소 분석기(Mecab)
+        - 사전 : 단어장, 보케
+        - 단어 임베딩
+             - 일반 방법
+             - 단어 주머니(고전적 방법)
+             - 패딩 처리
+        - pyTorch의 토치텍스트 모듈
+    - 12-3_자연어 처리_영화 댓글을 분석하여 긍정/부정 판독
+        - 긍정의 글과 부정의 글을 학습하여, 새로운 특정 글을 보고 부정적인지 긍정적인지 예측
+        - Deep RNN 이론
+            - Bidirectional Deep RNN
+        - Cell : RNN-Cell, LSTM-Cell, GRU-Cell
+        - 최적화함수 : 확률적 경사 하강법, 모멘텀, AdaGrad, Adam
+    - 13-1_강화학습_용어
+    - 13-2_강화학습_구현
+        - 다중 슬롯 머신 : UCB, 엡실론-greedy
+    - 13-3_강화학습_정책경사법_sarsa_QLearning
+        - 미로 게임 : 정책경사법, Sarsa, Q-Learning
+    - 13-4_강화학습_가치반복법_sarsa_QLearning
+        - 미로 게임 : 가치반복법, Sarsa, Q-Learning
+    - 13-5_강화학습_dqn을 이용한 카트폴
+        - 카트-폴 게임 : DQN
