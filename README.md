@@ -4,10 +4,98 @@
 - colab은 eek6928@gmail.com 계정에서 사용
 
 - Analysis
+    - 1_데이터획득_level2_openAPI활용
+        - 네이버 뉴스 api
+        - postman으로 연결 확인
+        - mariaDB
+        - 스케쥴러로 자동화
+    - 2-1_데이터획득_level3_WebScraping
+        - 네이버 금융에서 환율 정보 스크래핑
+        - BeautifulSoup
+        - cssSelector
+    - 2-2_데이터획득_level3_WebScraping_binaryData
+        - mnist 데이터 다운로드 / 압축 해제 / 디코딩
+    - 3-1_데이터획득_level4_크롤링
+        - 한국석유공사 오피넷
+        - selenium
+    - 3-2_데이터획득_level4_크롤링_youtube
+    - 4_데이터 준비_pandas
+        - pandas
+        - Series
+        - DataFrame
+            - indexing : loc, iloc, bollean indexing(조건)
+            - column 추가, 삭제, 요소 검색
+            - 병합 : merge, concat
+    - 5-1_데이터 분석 기본_실사례 적용
+        - 제공되는 music.csv를 이용
+    - 5-2_시각화 기초_matplotlib
+    - 5-3_pandas 고급기능_피벗테이블
+    - 5-4_seaborn을 이용한 시각화
+        - 박스플롯, 스왐플롯
+        - 산포도(산점도)
+        - 산포행렬
+        - 히스토그램
+        - 컬러맵(히트맵)
+    - 5-5_지도 시각화
+        - folium
+        - GeoJSON/TopoJSON
+    - 6-1_데이터 분석_실데이터 이용_인구통계+기타정보
+        - 인구통계, cctv(서울 열린데이터광장), 경찰서 위치(카카오 api), gps 정보(제공됨)
+    - 6-2_데이터 분석_실데이터 이용_인구통계+범죄정보+cctv연동
+        - 인구통계, cctv, 범죄통계(서울 열린데이터광장), 경찰서 위치(카카오 api), gps 정보(제공됨)
+    - 7_시계열 데이터 분석
+        - prophet 
+        - 야후 파이낸스 - 주식 데이터
+    - 8_데이터 종류 및 분석기법 유형
+        - 데이터 종류
+            - 범주형 : 명목형, 순서형
+            - 수치형 : 이산형, 연속형
+        - 데이터 분석 방법 : 설명 분석, 탐색 분석, 추론 분석, 예측 분석, 인과 분석, 규범 분석, 기계 분석
+    - 9_회귀분석
+        - 와인 품질
 
 - MachineLearning
+    - 0_머신러닝 개요
+        - 지도학습
+        - 비지도학습
+        - 준지도학습
+        - 강화학습
+    - 1_머신러닝_딥러닝 개발-서비스까지 Flow 확인_언어감지서비스
+    - 2_머신러닝_지도학습_분류_성능평가
+        - 혼동행렬
+        - 평가지표 : 정밀도, 재현율, f1 score, 특이성, 곡선하면적(ROC Curve, AOC)
+    - 3_최적화_파이프라인구축_하이퍼파라미터튜닝
+        - GridSearchCV
+        - 머신러닝 모델마다의 하이퍼파라미터
+        - 훈련/검증/테스트 
+    - 4_머신러닝_지도학습_회귀_성능평가
+        - 영화 데이터 사용
+        - fastFM
+    - 5_머신러닝_비지도학습_차원축소
+        - PCA / LDA / SVD(Truncated SVD) / NMF
+        - StandardScaler / MinMaxScaler / MaxAbsScaler / RobustScaler
+    - 6_머신러닝_비지도학습_군집화(클러스터링)
+        - K-mean / Mean Shift / GMM / DBSCAN(기하학 분포)
+        - 실루엣 분석
+    - 7_머신러닝_지도학습_분류_주요알고리즘
+        - 결정 트리
+        - 앙상블 학습
+             - 보팅
+             - 배깅 : 랜덤포레스트
+             - 부스팅 : AdaBoost, GBM, XGBoost, LightGBM
+             - 스태킹
+        - SVM
+        - KNN
 
 - DeepLearning
+    - 01 배경
+        - GPU / TPU
+        - 인공지능의 역사
+        - 이미지 인식 대회
+        - 딥러닝 엔진
+        - 신경망
+    - 03_텐서플로_기초 학습
+    - 04_CNN 기초
     - 05_텐서플로를 이용한 CNN 구현
         - mnist 데이터 활용
     - 06_텐서보드를 이용한 그래프의 시각화
